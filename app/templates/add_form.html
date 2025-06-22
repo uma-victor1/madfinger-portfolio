@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add {{ form_type }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Add a new {{ form_type }}</h1>
+        <form method="POST">
+            {% for field in fields %}
+            <div class="form-group">
+                <label for="{{ field }}">{{ field.replace('_', ' ')|title }}</label>
+                <input type="text" id="{{ field }}" name="{{ field }}" required>
+            </div>
+            {% endfor %}
+            <button type="submit" class="btn-submit">Add {{ form_type }}</button>
+        </form>
+    </div>
+</body>
+</html>
