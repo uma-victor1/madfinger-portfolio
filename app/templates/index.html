@@ -18,6 +18,12 @@
     />
 
     <link lang="sass" rel="stylesheet" href="./static/styles/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+
     <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon" />
     <title>{{ title }}</title>
   </head>
@@ -35,6 +41,39 @@
 
     <div class="profile">
       <div id="profile-picture" class="profile-picture">
+
+        <img src="./static/img/logo.jpg" />
+      </div>
+      <h1>{{ title }}</h1>
+    </div>
+
+    <div class="map-container">
+      <h2>Cool places I've been to</h2>
+      <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+      var map = L.map("map").setView([20, 0], 2);
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
+
+      var locations = [
+        { lat: 9.07344, lng: 7.49065, title: "Abuja" },
+        { lat: 5.37, lng: 7.5, title: "Ohafia" },
+        { lat: 6.5244, lng: 3.3792, title: "Lagos" },
+      ];
+
+      locations.forEach(function (location) {
+        L.marker([location.lat, location.lng])
+          .addTo(map)
+          .bindPopup("<b>" + location.title + "</b>");
+      });
+    </script>
+=======
 
 
    <img src="./static/img/umaprofile.png" />
@@ -85,6 +124,7 @@
         <p>Graduated with 4.1 GPA.</p>
       </div>
     </div>
+
 
 
   </body>
