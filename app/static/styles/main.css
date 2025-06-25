@@ -50,6 +50,17 @@ body {
   width: 200px;
 }
 
+.nav-links {
+    float: right;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
 .nav-content nav {
   display: block;
   width: 100%;
