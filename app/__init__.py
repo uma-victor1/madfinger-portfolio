@@ -38,12 +38,10 @@ def index():
                            work_experience=work_experience,
                            education_data=education_data)
 
+
 @app.route('/hobbies')
 def hobbies():
-    return render_template('hobbies.html', 
-                           title="My Hobbies", 
-                           url=os.getenv("URL"),
-                           hobbies=hobbies_data)
+    return render_template('hobbies.html', title="My Hobbies", url=os.getenv("URL"))
 
 @app.route('/add/work', methods=['GET', 'POST'])
 def add_work():
@@ -82,3 +80,4 @@ def add_hobby():
         hobbies_data.append(new_hobby)
         return redirect(url_for('hobbies'))
     return render_template('add_form.html', form_type='Hobby', fields=['name', 'image', 'description'])
+

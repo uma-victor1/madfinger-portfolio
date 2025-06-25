@@ -17,17 +17,9 @@
       rel="stylesheet"
     />
 
-    <link
-      lang="sass"
-      rel="stylesheet"
-      href="{{ url_for('static', filename='styles/main.css') }}"
-    />
-    <link
-      rel="icon"
-      href="{{ url_for('static', filename='img/favicon.ico') }}"
-      type="image/x-icon"
-    />
-    <title>{{ title }}</title>
+    <link lang="sass" rel="stylesheet" href="./static/styles/main.css" />
+    <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon" />
+    <title>My Hobbies</title>
   </head>
 
   <body>
@@ -35,27 +27,29 @@
       <div class="nav-content">
         <a href="/">
           <div class="nav-logo">
-            <img src="{{ url_for('static', filename='img/logo.svg') }}" />
+            <img src="./static/img/logo.svg" />
           </div>
         </a>
-        <nav>
-          <a href="/">Home</a>
-        </nav>
       </div>
     </header>
 
     <div class="hobbies-container">
-      <h1>My Hobbies <a href="/add/hobby" class="add-new-btn">+ Add New</a></h1>
-      {% for hobby in hobbies %}
+      <h1>My Hobbies</h1>
       <div class="hobby">
-        <img
-          src="{{ url_for('static', filename='img/' + hobby.image) }}"
-          alt="{{ hobby.name }}"
-        />
-        <h2>{{ hobby.name }}</h2>
-        <p>{{ hobby.description }}</p>
+        <img src="./static/img/paintball.png" alt="Hobby 1" />
+        <h2>Paintball</h2>
+        <p>I love playing paintball with my friends.</p>
       </div>
-      {% endfor %}
+      <div class="hobby">
+        <img src="./static/img/guitar.png" alt="Hobby 2" />
+        <h2>Guitar</h2>
+        <p>I enjoy playing guitar and learning new songs.</p>
+      </div>
+      <div class="hobby">
+        <img src="./static/img/cod.png" alt="Hobby 3" />
+        <h2>Video games</h2>
+        <p>I enjoy playing video games with my friends online</p>
+      </div>
     </div>
   </body>
 </html>

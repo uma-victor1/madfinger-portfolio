@@ -1,99 +1,246 @@
-p, h1, h2, h3, h4, h5, h6, button {
-    font-family: "Roboto", serif;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "Roboto", serif;
 }
 
 body {
-    background-color: #f5f5f9;
-    background-size: cover;
-    width: auto; 
-    overflow-x: hidden;
-    font-family: "Roboto", serif;
-    margin: 0px;
+  background-color: #f5f5f9;
+  background-size: cover;
+  width: auto;
+  overflow-x: hidden;
+  font-family: "Roboto", serif;
+  margin: 0px;
 }
 
 .nav-bar {
-    width: 100%;
-    display: inline-block;
-    background-color: #1C539F;
-    font-family: "Roboto", serif;
-    font-weight: 700 !important;
-    padding-top: 10px;
+  width: 100%;
+  display: inline-block;
+  background-color: #1c539f;
+  font-family: "Roboto", serif;
+  font-weight: 700 !important;
+  padding-top: 10px;
 }
 
 .nav-content .logo-touch-target {
-    display: inline-flex;
-    height: 60%;
-    width: 350px;
+  display: inline-flex;
+  height: 60%;
+  width: 350px;
 }
 
 .nav-content .nav-logo {
-    height: 60px;
-    margin: auto;
+  height: 60px;
+  margin: auto;
 }
 
+
+
 .nav-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-logo img {
-    width: 200px;
+  width: 200px;
 }
 
 .nav-content nav {
-    display: block;
-    width: 100%;
-    text-align: right;
-    padding-top: 0px;
-    padding-right: 0px;
+  display: block;
+  width: 100%;
+  text-align: right;
+  padding-top: 0px;
+  padding-right: 0px;
 }
 
 .profile {
-    background-color: #1d539f !important;
-    text-align: center;
-    height: 320px;
-    margin-bottom: 50px;
+  background-color: #1d539f !important;
+  text-align: center;
+  height: 320px;
+  margin-bottom: 50px;
 }
 
 .profile h1 {
-        font-size: 50px;
-        font-weight: 700;
-        color: white;
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
 }
 
 .profile img {
-        border-radius: 50%;
-        max-width: 100%;
-        max-height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;        
-        padding: 20px;
+  border-radius: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 20px;
 }
 
 .profile .profile-picture {
-    margin-bottom: 30px;
-    height: 200px;
+  margin-bottom: 30px;
+  height: 200px;
 }
 
 .banner {
-    padding: 20px 0px 50px 0px;
-    height: 150px;
-    background-color: #1d539f;
+  padding: 20px 0px 50px 0px;
+  height: 150px;
+  background-color: #1d539f;
 }
 
 .banner .logo {
-    max-width:180px;
-    max-height:60px;
-    width: auto;
-    height: auto;
+  max-width: 180px;
+  max-height: 60px;
+  width: auto;
+  height: auto;
 }
 
 .banner .title {
-    color: white;
-    font-size: 50px;
+
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.education {
+  padding: 20px;
+  margin: 0 auto 50px auto;
+  max-width: 800px;
+}
+
+.education h2 {
+  color: #1c539f;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.school {
+  background-color: #ffffff;
+  border-left: 5px solid #1c539f;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.school h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.school p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+  margin: 0 0 10px 0;
+}
+
+.school p:last-child {
+  margin-bottom: 0;
+}
+
+.school p strong {
+  color: #1c539f;
+}
+
+
+.work-experience {
+    padding: 20px;
+    margin: 0 auto 50px auto;
+    max-width: 800px;
+}
+
+.work-experience h2 {
+    color: #1C539F;
+    font-size: 36px;
     font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.job {
+    background-color: #ffffff;
+    border-left: 5px solid #1C539F;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.job h3 {
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+.hobbies-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.hobbies-container h1 {
+    color: #1C539F;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.hobby {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    vertical-align: top;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hobby img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.hobby h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333333;
+    margin: 0 0 10px 0;
+}
+
+.hobby p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #555555;
+}
+
+
+}
+
+.map-container {
+    padding: 20px;
+    margin: 0 auto 50px auto;
+    max-width: 800px;
+}
+
+.map-container h2 {
+    color: #1C539F;
+    font-size: 36px;
+    font-weight: 700;
+
 }
 
 .nav-content nav a {
@@ -117,9 +264,11 @@ body {
     color: #1C539F;
     font-size: 36px;
     font-weight: 700;
+
     text-align: center;
     margin-bottom: 30px;
 }
+
 
 .job, .school {
     background-color: #ffffff;
@@ -132,17 +281,29 @@ body {
 .job h3, .school h3 {
     font-size: 24px;
     font-weight: 700;
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+
     color: #333333;
     margin-top: 0;
     margin-bottom: 5px;
 }
 
+
 .job p, .school p {
+
+.job p {
+
     font-size: 16px;
     line-height: 1.6;
     color: #555555;
     margin: 0 0 10px 0;
 }
+
 
 .job p:last-child, .school p:last-child {
     margin-bottom: 0;
@@ -265,3 +426,40 @@ body {
 .btn-submit:hover {
     background-color: #15427a;
 }
+
+.job p:last-child {
+    margin-bottom: 0;
+}
+
+.job p strong {
+    color: #1C539F;
+}
+
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.about-me {
+  text-align: center;
+  padding: 60px 30px;
+  color: grey;
+}
+
+.about-me h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1d539f;
+}
+
+.about-me p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+
+
