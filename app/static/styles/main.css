@@ -49,14 +49,14 @@ body {
 }
 
 .nav-links {
-    float: right;
+  float: right;
 }
 
 .nav-links a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
 }
 
 .nav-content nav {
@@ -228,13 +228,10 @@ body {
 }
 
 .hobby p {
-    font-size: 15px;
-    line-height: 1.5;
-    color: #555555;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #555555;
 }
-
-
-
 
 .map-container {
   padding: 20px;
@@ -482,7 +479,7 @@ body h2 {
 .about-me {
   text-align: center;
   padding: 60px 30px;
-  color: grey;
+  color: #555555;
 }
 
 .about-me h2 {
