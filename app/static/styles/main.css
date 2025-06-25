@@ -38,8 +38,6 @@ body {
   margin: auto;
 }
 
-
-
 .nav-logo {
   display: flex;
   align-items: center;
@@ -111,7 +109,6 @@ body {
 }
 
 .banner .title {
-
   color: white;
   font-size: 50px;
   font-weight: 700;
@@ -162,293 +159,321 @@ body {
   color: #1c539f;
 }
 
-
 .work-experience {
-    padding: 20px;
-    margin: 0 auto 50px auto;
-    max-width: 800px;
+  padding: 20px;
+  margin: 0 auto 50px auto;
+  max-width: 800px;
 }
 
 .work-experience h2 {
-    color: #1C539F;
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 30px;
+  color: #1c539f;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .job {
-    background-color: #ffffff;
-    border-left: 5px solid #1C539F;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  border-left: 5px solid #1c539f;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .job h3 {
-    font-size: 24px;
-    font-weight: 700;
-
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .hobbies-container {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 20px;
-    text-align: center;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
 }
 
 .hobbies-container h1 {
-    color: #1C539F;
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 40px;
+  color: #1c539f;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
 }
 
 .hobby {
-    display: inline-block;
-    width: 250px;
-    margin: 20px;
-    vertical-align: top;
-    text-align: left;
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: inline-block;
+  width: 250px;
+  margin: 20px;
+  vertical-align: top;
+  text-align: left;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hobby img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 15px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 .hobby h2 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #333333;
-    margin: 0 0 10px 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #333333;
+  margin: 0 0 10px 0;
 }
 
 .hobby p {
-    font-size: 15px;
-    line-height: 1.5;
-    color: #555555;
-}
-
-
+  font-size: 15px;
+  line-height: 1.5;
+  color: #555555;
 }
 
 .map-container {
-    padding: 20px;
-    margin: 0 auto 50px auto;
-    max-width: 800px;
+  padding: 20px;
+  margin: 0 auto 50px auto;
+  max-width: 800px;
 }
 
 .map-container h2 {
-    color: #1C539F;
-    font-size: 36px;
-    font-weight: 700;
-
+  color: #1c539f;
+  font-size: 36px;
+  font-weight: 700;
 }
 
 .nav-content nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-weight: 500;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-weight: 500;
 }
 
 .nav-content nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.work-experience, .education {
-    padding: 20px;
-    margin: 0 auto 50px auto;
-    max-width: 800px;
+.work-experience,
+.education {
+  padding: 20px;
+  margin: 0 auto 50px auto;
+  max-width: 800px;
 }
 
-.work-experience h2, .education h2 {
-    color: #1C539F;
-    font-size: 36px;
-    font-weight: 700;
+.work-experience h2,
+.education h2 {
+  color: #1c539f;
+  font-size: 36px;
+  font-weight: 700;
 
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-
-.job, .school {
-    background-color: #ffffff;
-    border-left: 5px solid #1C539F;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.job,
+.school {
+  background-color: #ffffff;
+  border-left: 5px solid #1c539f;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.job h3, .school h3 {
-    font-size: 24px;
-    font-weight: 700;
-
+.job h3,
+.school h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
 #map {
-    height: 400px;
-    width: 100%;
+  height: 400px;
+  width: 100%;
 }
-
-
-    color: #333333;
-    margin-top: 0;
-    margin-bottom: 5px;
-}
-
-
-.job p, .school p {
 
 .job p {
-
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555555;
-    margin: 0 0 10px 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+  margin: 0 0 10px 0;
 }
 
-
-.job p:last-child, .school p:last-child {
-    margin-bottom: 0;
+.job p:last-child,
+.school p:last-child {
+  margin-bottom: 0;
 }
 
-.job p strong, .school p strong {
-    color: #1C539F;
+.job p strong,
+.school p strong {
+  color: #1c539f;
 }
 
 .hobbies-container {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 20px;
-    text-align: center;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
 }
 
 .hobbies-container h1 {
-    color: #1C539F;
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 40px;
+  color: #1c539f;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
 }
 
 .hobby {
-    display: inline-block;
-    width: 250px;
-    margin: 20px;
-    vertical-align: top;
-    text-align: left;
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: inline-block;
+  width: 250px;
+  margin: 20px;
+  vertical-align: top;
+  text-align: left;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hobby img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin-bottom: 15px;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 .hobby h2 {
-    font-size: 22px;
-    font-weight: 700;
-    color: #333333;
-    margin: 0 0 10px 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #333333;
+  margin: 0 0 10px 0;
 }
 
 .hobby p {
-    font-size: 15px;
-    line-height: 1.5;
-    color: #555555;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #555555;
 }
 
 .add-new-btn {
-    font-size: 16px;
-    font-weight: 500;
-    color: #1C539F;
-    text-decoration: none;
-    vertical-align: middle;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1c539f;
+  text-decoration: none;
+  vertical-align: middle;
 }
 
 .add-new-btn:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .form-container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .form-container h1 {
-    color: #1C539F;
-    font-size: 28px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 30px;
+  color: #1c539f;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .form-group label {
-    display: block;
-    font-size: 16px;
-    font-weight: 500;
-    color: #333333;
-    margin-bottom: 5px;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 5px;
 }
 
 .form-group input {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
 }
 
 .btn-submit {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    background-color: #1C539F;
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #1c539f;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .btn-submit:hover {
-    background-color: #15427a;
+  background-color: #15427a;
 }
 
 .job p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .job p strong {
-    color: #1C539F;
+  color: #1c539f;
 }
 
-  color: white;
-  font-size: 50px;
+.work-experience {
+  padding: 20px;
+  margin: 0 auto 50px auto;
+  max-width: 800px;
+}
+
+body h2 {
+  color: #1c539f;
+  font-size: 36px;
   font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.job {
+  background-color: #ffffff;
+  border-left: 5px solid #1c539f;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.job p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+  margin: 0 0 10px 0;
+}
+
+.job p:last-child {
+  margin-bottom: 0;
+}
+
+.job p strong {
+  color: #1c539f;
 }
 
 .about-me {
@@ -469,8 +494,3 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
-
-
-
-
-
