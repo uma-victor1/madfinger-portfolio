@@ -11,6 +11,7 @@
     <meta property="og:description" content="My Personal Portfolio" />
     <meta property="og:url" content="{{ url }}" />
 
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -18,7 +19,6 @@
     />
 
     <link lang="sass" rel="stylesheet" href="./static/styles/main.css" />
-
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -33,9 +33,14 @@
       <div class="nav-content">
         <a href="/">
           <div class="nav-logo">
+
             <img src="./static/img/logo.svg" />
           </div>
         </a>
+        <nav>
+          <a href="/hobbies">Hobbies</a>
+        </nav>
+
       </div>
     </header>
 
@@ -43,8 +48,36 @@
       <div id="profile-picture" class="profile-picture">
 
         <img src="./static/img/logo.jpg" />
+
       </div>
       <h1>{{ title }}</h1>
+    </div>
+
+
+    <div class="work-experience">
+      <h2>
+        Work Experience <a href="/add/work" class="add-new-btn">+ Add New</a>
+      </h2>
+      {% for job in work_experience %}
+      <div class="job">
+        <h3>{{ job.job_title }}</h3>
+        <p><strong>{{ job.company }}</strong> | {{ job.dates }}</p>
+        <p>{{ job.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="education">
+      <h2>
+        Education <a href="/add/education" class="add-new-btn">+ Add New</a>
+      </h2>
+      {% for school in education_data %}
+      <div class="school">
+        <h3>{{ school.university }}</h3>
+        <p><strong>{{ school.degree }}</strong> | {{ school.dates }}</p>
+        <p>{{ school.description }}</p>
+      </div>
+      {% endfor %}
     </div>
 
     <div class="map-container">
@@ -73,7 +106,7 @@
           .bindPopup("<b>" + location.title + "</b>");
       });
     </script>
-=======
+
 
 
    <img src="./static/img/umaprofile.png" />
@@ -124,6 +157,7 @@
         <p>Graduated with 4.1 GPA.</p>
       </div>
     </div>
+
 
 
 
