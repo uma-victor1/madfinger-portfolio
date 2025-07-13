@@ -30,7 +30,7 @@ pip install -r requirements.txt
 echo "restarting my portfolio service for the Flask app"
 
 systemctl daemon-reload
-systemctl restart portfolio
-systemctl status portfolio
+systemctl restart myportfolio
+systemctl status myportfolio
 
 echo "Redeployment script finished successfully!"
