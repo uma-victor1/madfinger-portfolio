@@ -11,11 +11,6 @@ SESSION_NAME="portfolio"
 VENV_PATH="$PROJECT_DIR/python3-virtualenv"
 
 
-echo "Killing all tmux sessions"
-
-tmux kill-server || true
-
-
 echo "Navigating to project directory"
 cd "$PROJECT_DIR"
 
@@ -32,14 +27,10 @@ source "$VENV_PATH/bin/activate"
 pip install -r requirements.txt
 
 
-echo "Starting new detached tmux session for the Flask app"
+echo "restarting my portfolio service for the Flask app"
 
-CMD="source \"$VENV_PATH/bin/activate\" && flask run --host=0.0.0.0"
-
-# Create a new detached tmux section
-# and run the command string inside it.
-tmux new-session -d -s "$SESSION_NAME" "$CMD"
-
-
+systemctl daemon-reload
+systemctl restart portfolio
+systemctl status portfolio
 
 echo "Redeployment script finished successfully!"
