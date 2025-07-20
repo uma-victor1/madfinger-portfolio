@@ -1,7 +1,14 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for
 from dotenv import load_dotenv
-from peewee import MySQLDatabase, Model, CharField, TextField, DateTimeField
+from peewee import (
+    MySQLDatabase,
+    Model,
+    CharField,
+    SqliteDatabase,
+    TextField,
+    DateTimeField,
+)
 from playhouse.shortcuts import model_to_dict
 import datetime
 
@@ -9,12 +16,16 @@ load_dotenv(override=True)
 app = Flask(__name__)
 
 # connect db
-mydb = MySQLDatabase(
-    os.getenv("MYSQL_DATABASE"),
-    user=os.getenv("MYSQL_USER"),
-    password=os.getenv("MYSQL_PASSWORD"),
-    host=os.getenv("MYSQL_HOST"),
-)
+if os.getenv("TESTING") == "true":
+    print("Running in test mode")
+    mydb = SqliteDatabase("file:memory?mode=memory&cache=shared", uri=True)
+else:
+    mydb = MySQLDatabase(
+        os.getenv("MYSQL_DATABASE"),
+        user=os.getenv("MYSQL_USER"),
+        password=os.getenv("MYSQL_PASSWORD"),
+        host=os.getenv("MYSQL_HOST"),
+    )
 
 print(mydb)
 
@@ -133,9 +144,18 @@ def add_hobby():
 
 @app.route("/api/timeline_post", methods=["POST"])
 def post_time_line_post():
-    name = request.form["name"]
-    email = request.form["email"]
-    content = request.form["content"]
+    name = request.form.get("name", "").strip()
+    email = request.form.get("email", "").strip()
+    content = request.form.get("content", "").strip()
+
+    # Basic validations expected by tests
+    if not name:  # missing or empty name
+        return "Invalid name", 400
+    if not email or "@" not in email:  # malformed email
+        return "Invalid email", 400
+    if not content:  # empty content
+        return "Invalid content", 400
+
     timeline_post = TimelinePost.create(name=name, email=email, content=content)
     return model_to_dict(timeline_post)
 
