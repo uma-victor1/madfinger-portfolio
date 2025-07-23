@@ -21,16 +21,10 @@ git fetch
 git reset origin/main --hard
 
 
-echo "Installing Python dependencies"
+echo "Docker Compose"
 
-source "$VENV_PATH/bin/activate"
-pip install -r requirements.txt
+docker compose -f docker-compose.prod.yml down
 
-
-echo "restarting my portfolio service for the Flask app"
-
-systemctl daemon-reload
-systemctl restart myportfolio
-systemctl status myportfolio
+docker compose -f docker-compose.prod.yml up -d --build
 
 echo "Redeployment script finished successfully!"
