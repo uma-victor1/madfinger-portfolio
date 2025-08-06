@@ -19,7 +19,7 @@ class AppTestCase(unittest.TestCase):
         assert '<div class="work-experience">' in html
         assert '<div class="education">' in html
         assert "<h2>About Me</h2>" in html
-        assert "<h2>Cool places I've been to</h2>" in html
+        assert "<h2>Cool Places I've Been To</h2>" in html
 
     def test_timeline(self):
         response = self.client.get("/api/timeline_post")
